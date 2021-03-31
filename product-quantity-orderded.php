@@ -33,7 +33,7 @@
         $products = mysqli_fetch_all($result, MYSQLI_ASSOC);
         // print_r($products);
     ?>
-        <h2>product name is "<span><?= $product ?></span>" and total
+        <h2>product name is <span><?= $product ?></span> and total
             number of pieces ordered is
             <span><?= $products[0]['SUM(quantityOrdered)'] ?></span>
         </h2>
